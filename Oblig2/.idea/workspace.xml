@@ -17,7 +17,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1Rh8iLmcFabvsMxWB5GnVr8iqbE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="true" />
@@ -28,9 +32,11 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -52,7 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DobbeltLenketListeTest (1)">
+  <component name="RunManager" selected="JUnit.DobbeltLenketListeTest (3)">
     <configuration name="DobbeltLenketListeTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Oblig2" />
       <extension name="coverage">
@@ -63,22 +69,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="no.oslomet.cs.algdat" />
       <option name="MAIN_CLASS_NAME" value="no.oslomet.cs.algdat.DobbeltLenketListeTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DobbeltLenketListeTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Oblig2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="no.oslomet.cs.algdat.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="no.oslomet.cs.algdat" />
-      <option name="MAIN_CLASS_NAME" value="no.oslomet.cs.algdat.DobbeltLenketListeTest" />
-      <option name="METHOD_NAME" value="oppgave6" />
+      <option name="METHOD_NAME" value="oppgave9" />
       <option name="TEST_OBJECT" value="uniqueId" />
       <uniqueIds>
         <uniqueId value="[engine:junit-jupiter]/[class:no.oslomet.cs.algdat.DobbeltLenketListeTest]" />
@@ -97,16 +88,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="no.oslomet.cs.algdat" />
       <option name="MAIN_CLASS_NAME" value="no.oslomet.cs.algdat.DobbeltLenketListeTest" />
-      <option name="METHOD_NAME" value="oppgave6" />
-      <option name="TEST_OBJECT" value="uniqueId" />
-      <uniqueIds>
-        <uniqueId value="[engine:junit-jupiter]/[class:no.oslomet.cs.algdat.DobbeltLenketListeTest]" />
-      </uniqueIds>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DobbeltLenketListeTest (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DobbeltLenketListeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Oblig2" />
       <extension name="coverage">
         <pattern>
@@ -116,7 +103,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="no.oslomet.cs.algdat" />
       <option name="MAIN_CLASS_NAME" value="no.oslomet.cs.algdat.DobbeltLenketListeTest" />
-      <option name="METHOD_NAME" value="oppgave6" />
+      <option name="METHOD_NAME" value="oppgave10" />
       <option name="TEST_OBJECT" value="uniqueId" />
       <uniqueIds>
         <uniqueId value="[engine:junit-jupiter]/[class:no.oslomet.cs.algdat.DobbeltLenketListeTest]" />
@@ -125,7 +112,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DobbeltLenketListeTest.oppgave6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DobbeltLenketListeTest.oppgave1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Oblig2" />
       <extension name="coverage">
         <pattern>
@@ -135,7 +122,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="no.oslomet.cs.algdat" />
       <option name="MAIN_CLASS_NAME" value="no.oslomet.cs.algdat.DobbeltLenketListeTest" />
-      <option name="METHOD_NAME" value="oppgave6" />
+      <option name="METHOD_NAME" value="oppgave1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DobbeltLenketListeTest.oppgave10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Oblig2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.oslomet.cs.algdat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.oslomet.cs.algdat" />
+      <option name="MAIN_CLASS_NAME" value="no.oslomet.cs.algdat.DobbeltLenketListeTest" />
+      <option name="METHOD_NAME" value="oppgave10" />
       <option name="TEST_OBJECT" value="method" />
       <uniqueIds>
         <uniqueId value="[engine:junit-jupiter]/[class:no.oslomet.cs.algdat.DobbeltLenketListeTest]" />
@@ -146,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DobbeltLenketListeTest (1)" />
-        <item itemvalue="JUnit.DobbeltLenketListeTest (4)" />
-        <item itemvalue="JUnit.DobbeltLenketListeTest.oppgave6" />
-        <item itemvalue="JUnit.DobbeltLenketListeTest (2)" />
         <item itemvalue="JUnit.DobbeltLenketListeTest (3)" />
+        <item itemvalue="JUnit.DobbeltLenketListeTest.oppgave1" />
+        <item itemvalue="JUnit.DobbeltLenketListeTest" />
+        <item itemvalue="JUnit.DobbeltLenketListeTest.oppgave10" />
+        <item itemvalue="JUnit.DobbeltLenketListeTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -169,83 +172,92 @@
       <workItem from="1570634926840" duration="5981000" />
       <workItem from="1571267556726" duration="3151000" />
       <workItem from="1571750607613" duration="411000" />
+      <workItem from="1571752376234" duration="7714000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/no/oslomet/cs/algdat/DobbeltLenketListeTest.java</url>
-          <line>913</line>
+          <line>905</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/no/oslomet/cs/algdat/DobbeltLenketListeTest.java</url>
-          <line>877</line>
+          <line>869</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/no/oslomet/cs/algdat/DobbeltLenketListeTest.java</url>
-          <line>869</line>
+          <line>861</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/no/oslomet/cs/algdat/DobbeltLenketListeTest.java</url>
-          <line>854</line>
+          <line>846</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/no/oslomet/cs/algdat/DobbeltLenketListeTest.java</url>
-          <line>831</line>
+          <line>823</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/no/oslomet/cs/algdat/DobbeltLenketListeTest.java</url>
-          <line>810</line>
+          <line>802</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/no/oslomet/cs/algdat/DobbeltLenketListeTest.java</url>
-          <line>791</line>
+          <line>783</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/no/oslomet/cs/algdat/DobbeltLenketListeTest.java</url>
-          <line>753</line>
+          <line>745</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/no/oslomet/cs/algdat/DobbeltLenketListeTest.java</url>
-          <line>742</line>
+          <line>734</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/no/oslomet/cs/algdat/DobbeltLenketListeTest.java</url>
-          <line>719</line>
+          <line>711</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/no/oslomet/cs/algdat/DobbeltLenketListeTest.java</url>
-          <line>635</line>
+          <line>627</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/no/oslomet/cs/algdat/DobbeltLenketListeTest.java</url>
-          <line>304</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/no/oslomet/cs/algdat/DobbeltLenketListeTest.java</url>
-          <line>714</line>
+          <line>706</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/no/oslomet/cs/algdat/DobbeltLenketListeTest.java</url>
-          <line>700</line>
+          <line>692</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>

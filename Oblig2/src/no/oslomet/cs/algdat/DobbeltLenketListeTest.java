@@ -6,14 +6,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class DobbeltLenketListeTest {
 
-    @org.junit.jupiter.api.Test
-    public void userTest() {
-        Character[] c = { 'A' , 'B' , 'C' , 'D' , 'E' , 'F' , 'G' , 'H' , 'I' , 'J' ,};
-        DobbeltLenketListe<Character> liste = new DobbeltLenketListe<>(c);
-        System. out .println(liste.subliste(3,8)); // [D, E, F, G, H]
-        System. out .println(liste.subliste(5,5)); // []
-        System. out .println(liste.subliste(8,liste.antall())); // [I, J]
-    }
     ////// Oppgave 1 /////////////////////
     @org.junit.jupiter.api.Test
     void oppgave1() {

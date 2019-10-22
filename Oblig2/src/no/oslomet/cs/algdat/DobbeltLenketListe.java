@@ -6,13 +6,8 @@ package no.oslomet.cs.algdat;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
-import java.util.Comparator;
-import java.util.ConcurrentModificationException;
-import java.util.NoSuchElementException;
-import java.util.StringJoiner;
+import java.util.*;
 
-import java.util.Iterator;
-import java.util.Objects;
 import java.util.function.Predicate;
 
 
@@ -274,7 +269,6 @@ public class DobbeltLenketListe<T> implements Liste<T> {
     @Override
     public T fjern(int indeks) {
         if(antall == 0 || indeks < 0 || antall <= indeks) {
-            System.out.println(antall + " " + indeks);
             throw new IndexOutOfBoundsException();
         }
         if(antall == 1) {
@@ -312,9 +306,23 @@ public class DobbeltLenketListe<T> implements Liste<T> {
         return verdi;
     }
 
+
     @Override
     public void nullstill() {
-        throw new NotImplementedException();
+        /*
+         * Måte 1: Mister alle referanser ved å fjerne hale og hode, ingen grunn til å iterere mellom
+         */
+        hode = null;
+        hale = null;
+        antall = 0;
+        endringer++;
+        /*
+         * Måte 2: Looper mellom og fjerner indeks 0 til antallet er 0, kommentert ut fordi metode 1 er raskere
+         */
+        // while(antall != 0) {
+        //     fjern(0);
+        // }
+        // endringer ++;
     }
 
     @Override
@@ -354,11 +362,12 @@ public class DobbeltLenketListe<T> implements Liste<T> {
 
     @Override
     public Iterator<T> iterator() {
-        throw new NotImplementedException();
+        return new DobbeltLenketListeIterator();
     }
 
     public Iterator<T> iterator(int indeks) {
-        throw new NotImplementedException();
+        indeksKontroll(indeks, false);
+        return new DobbeltLenketListeIterator(indeks);
     }
 
     private class DobbeltLenketListeIterator implements Iterator<T>
@@ -368,31 +377,75 @@ public class DobbeltLenketListe<T> implements Liste<T> {
         private int iteratorendringer;
 
         private DobbeltLenketListeIterator(){
-            throw new NotImplementedException();
+            denne = hode;
+            iteratorendringer = endringer;
+            fjernOK = false;
         }
 
         private DobbeltLenketListeIterator(int indeks){
-            throw new NotImplementedException();
+            indeksKontroll(indeks, false);
+            denne = finnNode(indeks);
+            iteratorendringer = endringer;
+            fjernOK = false;
         }
 
         @Override
         public boolean hasNext(){
-            throw new NotImplementedException();
+            return denne != null;
         }
 
         @Override
         public T next(){
-            throw new NotImplementedException();
+            if(iteratorendringer != endringer) throw new ConcurrentModificationException();
+            if(!hasNext()) throw new NoSuchElementException();
+            fjernOK = true;
+            T returnValue = denne.verdi;
+            denne = denne.neste;
+            return returnValue;
         }
 
         @Override
         public void remove(){
+            if(!fjernOK) throw new IllegalStateException();
+            if(iteratorendringer != endringer ) throw new ConcurrentModificationException();
+            if(antall == 0) {
+                return;
+            }
+            if(antall == 1) {
+                hode = null;
+                hale = null;
+            }
+            else if(denne == null) {
+                    hale = hale.forrige;
+                    hale.neste = null;
+            }
+            else if(denne.forrige == hode) {
+                hode = denne;
+                denne.forrige = null;
+            }
+            else {
+                denne.forrige.forrige.neste = denne;
+                denne.forrige = denne.forrige.forrige;
+            }
+            endringer++;
+            iteratorendringer++;
+            antall--;
+            fjernOK = false;
         }
 
     } // class DobbeltLenketListeIterator
 
     public static <T> void sorter(Liste<T> liste, Comparator<? super T> c) {
-        throw new NotImplementedException();
+        for(int i=0; i<liste.antall(); i++) {
+            for(int j=0; j<liste.antall()-i-1; j++) {
+                if(c.compare(liste.hent(j), liste.hent(j+1)) > 0) {
+                    T value1 = liste.hent(j);
+                    T value2 = liste.hent(j+1);
+                    liste.oppdater(j, value2);
+                    liste.oppdater(j+1, value1);
+                }
+            }
+        }
     }
 
 } // class DobbeltLenketListe
